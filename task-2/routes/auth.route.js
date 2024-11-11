@@ -38,7 +38,7 @@ router.post("/user/login", async (req, res) => {
               expiresIn: "1d",
             });
             res.cookie("token", token);
-            return res.json({ Success: "Success" });
+            return res.json({ Status: "Success" });
           } else {
             return res.json({ Error: "Wrong password" });
           }
